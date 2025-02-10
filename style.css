@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+h1 {
+    color: #e60000;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.container .tenor-gif-embed {
+    max-width: 500px;
+}
+
+.container .btn {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    gap: 15px; /* Reduced gap between buttons */
+    margin-top: 20px;
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.yes-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+    transition: font-size 1s ease, padding 1s ease; /* Slowed down transition */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.no-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+    transition: font-size 0.3s ease, padding 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevent resizing */
+    width: auto; /* Keep fixed width */
+    height: 45px; /* Set fixed height */
+    text-align: center;
+}
+
+/* Add hover effects for buttons */
+.no-btn:hover {
+    background-color: darkred;
+}
+
+.yes-btn:hover {
+    background-color: darkgreen;
+}
+
+/* Ensure content is spaced out without overlapping */
+h1, p {
+    margin-bottom: 20px;
+}
+
+/* Background Design for the Love Letter Page */
+body {
+    background-color: #f2e6d9; /* Light parchment background */
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the new Love Letter Button */
+.love-letter-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff6f61; /* Love red color */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.love-letter-btn:hover {
+    background-color: #ff4d39; /* Darker red on hover */
+}
+
+
+.letter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.transparenttextures.com/patterns/heart.png'), #f2e6d9; /* Heart pattern as background */
+    background-size: cover;
+}
+
+.letter {
+    background-color: #fff9e6; /* Soft, light paper color */
+    border: 2px solid #e0c29e; /* Light border for the love letter */
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff6f61; /* Romantic red color */
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61; /* Love red color */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #ff4d39;
+}
+
+/* Heart background pattern */
+@import url('https://www.transparenttextures.com/patterns/heart.png');
+

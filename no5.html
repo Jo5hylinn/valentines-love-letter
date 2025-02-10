@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I Love You</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="tenor-gif-embed" data-postid="10031878163830317345" data-share-method="host" data-aspect-ratio="1" data-width="300%"><a href="https://tenor.com/view/sad-kitty-sad-cat-cat-cat-meme-gif-10031878163830317345">Sad Kitty Sad Cat GIF</a>from <a href="https://tenor.com/search/sad+kitty-gifs">Sad Kitty GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+            <h1>You might regret this!</h1>
+            <p>Attempts left: ∞</p>
+
+
+            <div class="btn">
+                <a href="yes.html" class="yes-btn" id="yesBtn">Yes</a>
+                <a href="no6.html"class="no-btn" onclick="increaseYesSize()">No</a>
+            </div>
+        </div>
+        <script>
+            // Get the current number of "No" clicks from localStorage (if any)
+            let noClicks = localStorage.getItem("noClicks");
+
+            // If noClicks is not set, initialize it
+            if (!noClicks) {
+                noClicks = 0;
+            } else {
+                noClicks = parseInt(noClicks); // Convert to integer
+            }
+
+            // Increase the click count
+            noClicks++;
+
+            // Store the updated click count back to localStorage
+            localStorage.setItem("noClicks", noClicks);
+
+            // Adjust the font size of the Yes button based on the click count
+            let yesButton = document.getElementById("yesBtn");
+            let newSize = 44 + (noClicks * 2.1); // Increase size by 5px for each click (faster)
+            yesButton.style.fontSize = newSize + "px"; // Set new font size
+        </script>
+        
+        
+    </body>
+</html>
