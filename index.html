@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I Love You</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="tenor-gif-embed" data-postid="3506344065033604903" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/cute-cat-cat-cute-cute-smile-cat-smile-gif-3506344065033604903">Cute Cat Cat Cute GIF</a>from <a href="https://tenor.com/search/cute+cat-gifs">Cute Cat GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+            <h1>Dear Amanda Yong, Will you be my Valentine?</h1>
+            <p>Please select an answer</p>
+
+            <div class="btn">
+                <a href="yes.html" class="yes-btn" id="yesBtn">Yes</a>
+                <a href="no1.html" class="no-btn" onclick="increaseYesSize()">No</a>
+            </div>
+        </div>
+
+        <script>
+            // Set the initial size of the Yes button on the first page
+            let yesButton = document.getElementById("yesBtn");
+            yesButton.style.fontSize = "20px"; // Set the initial font size
+
+            // Get the current number of "No" clicks from localStorage (if any)
+            let noClicks = localStorage.getItem("noClicks");
+
+            // If noClicks is not set or is less than 1, initialize it to 0
+            if (noClicks === null || noClicks < 1) {
+                noClicks = 0;
+            }
+
+            // Store the current click count in localStorage for later use
+            localStorage.setItem("noClicks", noClicks);
+        </script>
+    </body>
+</html>
